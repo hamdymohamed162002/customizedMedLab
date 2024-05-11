@@ -1854,52 +1854,8 @@ mybutton &&
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link menu-link" href="#crm" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                aria-controls="crm">
-                <img src="/assets/images/folder-open.png" /><span>إدارة علاقات العملاء</span>
-              </a>
-              <div class="collapse menu-dropdown " id="crm">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="/crm/programer.html" class="nav-link">
-                      البرامج </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/crm/programer.html" class="nav-link"> التقارير
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/crm/programer.html" class="nav-link ">
-                      الإعدادت
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link menu-link" href="#Laboratory3" data-bs-toggle="collapse" role="button"
-                aria-expanded="false" aria-controls="Laboratory3">
-                <img src="/assets/images/personalcard.png" /><span>الجهات والعملاء</span>
-              </a>
-              <div class="collapse menu-dropdown " id="Laboratory3">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="/Laboratory/Programs.html" class="nav-link">
-                      البرامج </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="Reports.html" class="nav-link"> التقارير
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/Laboratory/settings.html" class="nav-link ">
-                      الإعدادت
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+         
+           
             <li class="nav-item">
               <a class="nav-link menu-link" href="#Laboratory4" data-bs-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="Laboratory4">
@@ -1923,29 +1879,7 @@ mybutton &&
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link menu-link" href="#Purchases" data-bs-toggle="collapse" role="button"
-                aria-expanded="false" aria-controls="Purchases">
-                <img src="/assets/images/box.png" /><span>المشتريات </span>
-              </a>
-              <div class="collapse menu-dropdown " id="Purchases">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="/Purchases/Programs.html" class="nav-link">
-                      البرامج </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/Purchases/Reports.html" class="nav-link"> التقارير
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/Purchases/settings.html" class="nav-link ">
-                      الإعدادت
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+           
             <li class="nav-item">
               <a class="nav-link menu-link" href="#Laboratory5" data-bs-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="Laboratory5">
@@ -1953,14 +1887,7 @@ mybutton &&
               </a>
               <div class="collapse menu-dropdown " id="Laboratory5">
                 <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="/Suppliers/Programs.html" class="nav-link">
-                      البرامج </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/Suppliers/Reports.html" class="nav-link"> التقارير
-                    </a>
-                  </li>
+                 
                   <li class="nav-item">
                     <a href="/Suppliers/settings.html" class="nav-link ">
                       الإعدادت
@@ -2037,7 +1964,7 @@ mybutton &&
             <li class="nav-item">
               <a class="nav-link menu-link" href="#Laboratory7" data-bs-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="Laboratory7">
-                <img src="/assets/images/profile-2user.png" /><span> HR </span>
+                <img src="/assets/images/profile-2user.png" /><span> الموظفين </span>
               </a>
               <div class="collapse menu-dropdown " id="Laboratory7">
                 <ul class="nav nav-sm flex-column">
@@ -2057,29 +1984,7 @@ mybutton &&
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link menu-link" href="#Laboratory8" data-bs-toggle="collapse" role="button"
-                aria-expanded="false" aria-controls="Laboratory8">
-                <img src="/assets/images/strongbox-2.png" /><span> الحسابات العامة </span>
-              </a>
-              <div class="collapse menu-dropdown " id="Laboratory8">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="/GeneralAccounts/Programs.html" class="nav-link">
-                      البرامج </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/GeneralAccounts/Reports.html" class="nav-link"> التقارير
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/GeneralAccounts/settings.html" class="nav-link ">
-                      الإعدادت
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="/public-settings">
                 <img src="/assets/images/setting-2.png" /><span> إعددات عامة </span>
