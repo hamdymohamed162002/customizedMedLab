@@ -33,11 +33,11 @@
         Object.keys(e).forEach(function (t) {
           e[t] && document.documentElement.setAttribute(t, e[t]);
         })));
-  if (localStorage.getItem("language") == "ar") {
-    console.log("language =", localStorage.getItem("language"));
-    document.body.dir = "rtl";
-  } else {
-    console.log("language =", localStorage.getItem("language"));
-    document.body.dir = "ltr";
-  }
+  // if (localStorage.getItem("language") == "ar") {
+  //   console.log("language =", localStorage.getItem("language"));
+  //   document.body.dir = "rtl";
+  // } else {
+  //   console.log("language =", localStorage.getItem("language"));
+  //   document.body.dir = "ltr";
+  // }
 })();

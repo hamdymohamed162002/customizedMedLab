@@ -224,6 +224,10 @@ ul {
   color: white;
 }
 
+.navbar-nav .nav-link.active {
+  color: #086CAE !important;
+}
+
 .tab .dropdowntablinks .tablinks,
 .tab .dropdowntablinks:hover .tablinks {
   color: #a3a6b7;
@@ -304,6 +308,10 @@ form button {
   color: #086CAE !important;
 }
 
+.btn {
+  box-shadow: 0px 0px 0px 0px !important;
+}
+
 button[type="button"].add-btn,
 button[type="button"].btn-save,
 .cansel-btn,
@@ -329,6 +337,7 @@ button[type="button"].btn-save:hover,
   background: white !important;
   color: #086CAE !important;
   font-size: 16px;
+  border: 1px solid;
 }
 
 .cansel-btn,
@@ -379,6 +388,12 @@ button[type="button"].btn-save:hover,
 
 .tabcontent .table-sm> :not(caption)>*>* {
   padding: 10px;
+}
+
+#second_report .TableContainer {
+  overflow-x: auto;
+  width: 100%;
+  padding-bottom: 130px;
 }
 
 .tabcontent table thead tr {
@@ -921,8 +936,13 @@ select {
 }
 
 
-#Supply-reportFilter .modal-dialog {
+#Supply-reportFilter .modal-dialog,
+#detailesRequired .modal-dialog {
   max-width: 60%;
+}
+
+#Issuing-invoice .modal-dialog {
+  max-width: 20%;
 }
 
 #addNotification table .buttons button {
@@ -1074,6 +1094,9 @@ input.form-check-input {
   width: calc(100% / 4) !important;
 }
 
+.B2B-setings .nav-tabs .nav-item {
+  width: calc(100% / 4) !important;
+}
 
 
 
@@ -1118,6 +1141,11 @@ input.form-check-input {
 #mission .nav-tabs li button:hover {
   border: 1px solid #086CAE !important;
   color: #086CAE !important;
+}
+
+.Cancel-btn:hover {
+  border: 1px solid white !important;
+  color: white !important;
 }
 
 #mission .buttons button {
@@ -1389,6 +1417,15 @@ h5 img {
 
 table tr td div {
   text-align: center;
+}
+
+.card-add-permisions .card-body .tab .dropdowntablinks.active .menu-link,
+.card-add-permisions .card-body .tab .tablinks:hover,
+.card-add-permisions .card-body .tab .tablinks.active,
+.card-add-permisions .card-body .tab .dropdowntablinks.active .menu-link,
+.card-add-permisions .card-body .tab .tablinks {
+  background: white !important;
+  color: black !important;
 }
 
 @media only screen and (max-width: 750px) {

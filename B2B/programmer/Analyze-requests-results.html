@@ -30,6 +30,22 @@
 
 
 </head>
+<style>
+  .Tag {
+    cursor: pointer;
+  }
+
+  .SingleBtn {
+    border: 1px solid #E6F0F7;
+    color: black;
+  }
+
+  .SingleBtn.active {
+    background-color: #F6F6F6;
+    border: 1px solid black;
+    color: black;
+  }
+</style>
 
 <body dir="rtl">
 
@@ -587,7 +603,8 @@
                     class="align-middle">Help</span></a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="pages-profile.html"><i
-                    class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Balance :
+                    class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i> <span class="align-middle">Balance
+                    :
                     <b>$5971.67</b></span></a>
                 <a class="dropdown-item" href="pages-profile-settings.html"><span
                     class="badge bg-soft-success text-success mt-1 float-end">New</span><i
@@ -669,7 +686,7 @@
           </div>
           <ul class="navbar-nav" id="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="/index.html">
+              <a class="nav-link" href="/index.html">
                 <img src="/assets/images/mainPage.svg" /><span>الصفحة الرئيسية</span>
               </a>
             </li>
@@ -681,15 +698,16 @@
               <div class="collapse menu-dropdown " id="sidebarDashboards">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item ">
-                    <a href="/Manage-patient-files/Programs/Programs.html" class="nav-link  ">
+                    <a href="/Manage-patient-files/Programs/Programs.html" class="nav-link active "
+                      data-key="t-analytics">
                       البرامج </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/Manage-patient-files/Reports.html" class="nav-link ">
-                      التقارير </a>
+                    <a href="/Manage-patient-files/Reports.html" class="nav-link " data-key="t-ecommerce"> التقارير
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/Manage-patient-files/settings.html" class="nav-link"> الإعدادت
+                    <a href="/Manage-patient-files/settings.html" class="nav-link" data-key="t-crypto"> الإعدادت
                     </a>
                   </li>
                 </ul>
@@ -703,15 +721,15 @@
               <div class="collapse menu-dropdown " id="Laboratory">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="/Laboratory/Programs.html" class="nav-link">
+                    <a href="/Laboratory/Programs.html" class="nav-link active" data-key="t-analytics">
                       البرامج </a>
                   </li>
                   <li class="nav-item">
-                    <a href="Reports.html" class="nav-link"> التقارير
+                    <a href="/Laboratory/Reports.html" class="nav-link" data-key="t-ecommerce"> التقارير
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/Laboratory/settings.html" class="nav-link ">
+                    <a href="/Laboratory/settings.html" class="nav-link " data-key="t-crypto">
                       الإعدادت
                     </a>
                   </li>
@@ -726,15 +744,15 @@
               <div class="collapse menu-dropdown " id="Laboratory1">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="/Laboratory/Programs.html" class="nav-link">
+                    <a href="/pages-coming-soon.html" class="nav-link" data-key="t-analytics">
                       البرامج </a>
                   </li>
                   <li class="nav-item">
-                    <a href="Reports.html" class="nav-link"> التقارير
+                    <a href="/pages-coming-soon.html" class="nav-link" data-key="t-ecommerce"> التقارير
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/Laboratory/settings.html" class="nav-link ">
+                    <a href="/pages-coming-soon.html" class="nav-link " data-key="t-crypto">
                       الإعدادت
                     </a>
                   </li>
@@ -749,7 +767,7 @@
               <div class="collapse menu-dropdown " id="Laboratory2">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="/Laboratory/Programs.html" class="nav-link">
+                    <a href="/Stores/Programs.html" class="nav-link" data-key="t-analytics">
                       البرامج </a>
                   </li>
                   <li class="nav-item">
@@ -757,7 +775,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/Laboratory/settings.html" class="nav-link ">
+                    <a href="/Stores/settings.html" class="nav-link " data-key="t-crypto">
                       الإعدادت
                     </a>
                   </li>
@@ -772,15 +790,15 @@
               <div class="collapse menu-dropdown " id="Laboratory3">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="/Laboratory/Programs.html" class="nav-link">
+                    <a href="/pages-coming-soon.html" class="nav-link" data-key="t-analytics">
                       البرامج </a>
                   </li>
                   <li class="nav-item">
-                    <a href="Reports.html" class="nav-link"> التقارير
+                    <a href="/pages-coming-soon.html" class="nav-link" data-key="t-ecommerce"> التقارير
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/Laboratory/settings.html" class="nav-link ">
+                    <a href="/pages-coming-soon.html" class="nav-link " data-key="t-crypto">
                       الإعدادت
                     </a>
                   </li>
@@ -795,15 +813,15 @@
               <div class="collapse menu-dropdown " id="Laboratory4">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="/Laboratory/Programs.html" class="nav-link">
+                    <a href="/the-stores/Programs.html" class="nav-link" data-key="t-analytics">
                       البرامج </a>
                   </li>
                   <li class="nav-item">
-                    <a href="Reports.html" class="nav-link"> التقارير
+                    <a href="/pages-coming-soon.html" class="nav-link" data-key="t-ecommerce"> التقارير
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/Laboratory/settings.html" class="nav-link ">
+                    <a href="/pages-coming-soon.html" class="nav-link " data-key="t-crypto">
                       الإعدادت
                     </a>
                   </li>
@@ -818,15 +836,15 @@
               <div class="collapse menu-dropdown " id="Laboratory5">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="/Laboratory/Programs.html" class="nav-link">
+                    <a href="/pages-coming-soon.html" class="nav-link" data-key="t-analytics">
                       البرامج </a>
                   </li>
                   <li class="nav-item">
-                    <a href="Reports.html" class="nav-link"> التقارير
+                    <a href="/pages-coming-soon.html" class="nav-link" data-key="t-ecommerce"> التقارير
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/Laboratory/settings.html" class="nav-link ">
+                    <a href="/pages-coming-soon.html" class="nav-link " data-key="t-crypto">
                       الإعدادت
                     </a>
                   </li>
@@ -838,10 +856,10 @@
                 aria-expanded="false" aria-controls="PricingContracts">
                 <img src="/assets/images/document-normal.png" /><span>التسعير والتعاقدات </span>
               </a>
-              <div class="collapse menu-dropdown show" id="PricingContracts">
+              <div class="collapse menu-dropdown " id="PricingContracts">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="/PricingContracts/Programs.html" class="nav-link active">
+                    <a href="/PricingContracts/Programs.html" class="nav-link ">
                       البرامج </a>
                   </li>
                   <li class="nav-item">
@@ -851,6 +869,7 @@
                 </ul>
               </div>
             </li>
+
             <li class="nav-item">
               <a class="nav-link menu-link" href="#Approvals" data-bs-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="Approvals">
@@ -868,6 +887,29 @@
                   </li>
                   <li class="nav-item">
                     <a href="/Approvals/Settings.html" class="nav-link ">
+                      الإعدادت
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link menu-link" href="#B2B" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                aria-controls="B2B">
+                <img src="/assets/images/document-normal.png" /><span>B2B </span>
+              </a>
+              <div class="collapse menu-dropdown show" id="B2B">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="/B2B/programer.html" class="nav-link active">
+                      البرامج </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/B2B/Reports.html" class="nav-link"> التقارير
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/B2B/programer.html" class="nav-link ">
                       الإعدادت
                     </a>
                   </li>
@@ -928,212 +970,265 @@
           <!-- start page breadcrumb -->
           <div class="row">
             <ul class="list-breadcrumb">
-              <li><a href="/index.html"><img src="/assets/images/mainPage.svg" /><span>الصفحة
+              <li><a href="index.html"><img src="/assets/images/mainPage.svg" /><span>الصفحة
                     الرئيسية</span></a></li>
-              <li><a href="/PricingContracts/Programs.html">إدارة التسعير والتعاقدات</a></li>
-              <li><a href="/PricingContracts/Programs.html">البرامج</a></li>
-              <li><a href="/PricingContracts/ServiceManagement/index.html">إدارة الخدمات </a></li>
-              <li>إضافة جديدة </li>
+              <li><a href="/B2B/programer.html">B2B</a></li>
+              <li><a href="/B2B/programer.html">البرامج</a></li>
+              <li>تحليل الطلبات والنتائج </li>
             </ul>
           </div>
           <div class="back mb-3">
-            <a href="/PricingContracts/ServiceManagement/index.html">
+            <a href="/B2B/programer.html">
               <h5> <img src="/assets/images/PricingContracts/arrow-right.svg"> رجوع </h5>
             </a>
           </div>
           <!-- end page breadcrumb -->
           <!-- start page header -->
-          <div class="mainCard">
+          <div class="ProgramsTabs">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="Previous-orders-tab" data-bs-toggle="tab"
+                  data-bs-target="#Previous-orders" type="button" role="tab" aria-controls="Previous-orders"
+                  aria-selected="true">الطلبات الحالية </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                  role="tab" aria-controls="profile" aria-selected="false">الطلبات السابقة </button>
+              </li>
 
-            <div class="d-flex justify-content-between align-items-center">
-              <h1 style="margin-bottom: 0px;">إضافة للمستوى الثالث</h1>
-
-              <div class="d-flex gap-2">
-                <a href="/PricingContracts/ServiceManagement/index.html" style="border-radius: 8px; margin-top: 0px;"
-                  class="btn  Cancel-btn" type="button">إلغاء
-                </a>
-              </div>
-            </div>
-
-
-            <div class="AddNewRequest PricingManagement">
-
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="InputWithlabel">
-                    <label>
-                      المستوى الثاني</label>
-                    <div class="DateInput"> <select class="form-select" aria-label="Default select example">
-                        <option selected> تحاليل الدم</option>
-                        <option value="1">--</option>
-                        <option value="2">--</option>
-                        <option value="3">--</option>
-                      </select>
-                    </div>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="Previous-orders" role="tabpanel"
+                aria-labelledby="Previous-orders-tab">
+                <div class="mainCard mt-3">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4>قائمة الطلبات الحالية</h4>
+                    <a style="border-radius: 8px;" class="btn mt-2 add-btn" type="button" data-bs-toggle="modal"
+                      data-bs-target="#NewAddAnalysis">
+                      إضافة طلب جديد
+                      +</a>
                   </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="InputWithlabel">
-                    <label>
-                      الإسم بالعربي
-                    </label>
-                    <div class="DateInput">
-                      <input type="text" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="InputWithlabel">
-                    <label>
-                      الإسم باللغه الإنجليزية
-                    </label>
-                    <div class="DateInput">
-                      <input type="text" class="input-ltr" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="InputWithlabel">
-                    <label>
-                      وصف الخدمة بالعربي </label>
-                    <div class="DateInput">
-                      <textarea rows="4"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="InputWithlabel">
-                    <label>
-                      وصف الخدمة بالإنجليزية</label>
-                    <div class="DateInput">
-                      <textarea rows="4" class="textarea-ltr"></textarea>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-4">
-                <div class="RadioBoxContainer ">
-                  <label>
-                    تقييد الخدمة
-                  </label>
-                  <div class="d-flex gap-3">
-                    <div class="d-flex align-items-center gap-1">
-                      <input type="radio" value="man" id="flexCheckDisabled" name="gender">
-                      <span>ذكر </span>
-                    </div>
-                    <div class="d-flex align-items-center gap-1">
-                      <input type="radio" value="woman" id="flexCheckDisabled" name="gender">
-                      <span>أنثى</span>
-                    </div>
-                    <div class="d-flex align-items-center gap-1">
-                      <input type="radio" value="both" id="flexCheckDisabled" name="gender">
-                      <span>كلاهما</span>
-                    </div>
-                  </div>
+                  <div class="cardToolBar ">
 
-                </div>
-              </div>
-              <div class="row">
-
-                <div class="col-lg-6">
-                  <div class="InputWithlabel">
-                    <label>
-                      تقييد الخدمة من
-                    </label>
-
-                    <div class="DateInput">
-                      <input type="date" class="CustomInputDate" id="DataPick1" />
-                      <!-- <div class="datepicker-icon" id="date1"></div> -->
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="col-lg-6 ">
-                  <div class="InputWithlabel">
-                    <label>
-                      تقييد الخدمة إلى
-                    </label>
-
-                    <div class="DateInput">
-                      <input type="date" class="CustomInputDate" id="DataPick1" />
-                      <!-- <div class="datepicker-icon" id="date1"></div> -->
-                    </div>
-
-                  </div>
-                </div>
-                <div class="col-md-12 mt-3"> <img src="/assets/images/tick-circle.svg"
-                    style="width: 20px;height: 20px;">
-                  تنفذ الخدمة خارج المختبر</div>
-                <div class="col-lg-6">
-                  <div class="InputWithlabel">
-                    <label> المورد </label>
-                    <div class="DateInput"> <select class="form-select" aria-label="Default select example">
-                        <option selected> تحاليل الدم</option>
-                        <option value="1">--</option>
-                        <option value="2">--</option>
-                        <option value="3">--</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 title">
-                  <h5>المده المسموح بتكرار الخدمة لنفس المريض</h5>
-                </div>
-                <div class="col-lg-6">
-                  <div class="InputWithlabel">
-                    <label>
-                      عدد الأيام</label>
-
-                    <div class="DateInput">
-                      <input type="text" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="InputWithlabel">
-                    <label>
-                      عدد الساعات </label>
-
-                    <div class="DateInput">
-                      <input type="text" />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12 mt-3">
-                  <div class="RadioBoxContainer ">
-                    <label>
-                      مستوى سرية الخدمة
-                    </label>
-                    <div class="d-flex gap-3">
-                      <div class="d-flex align-items-center gap-1">
-                        <input type="radio" value="man" id="flexCheckDisabled" name="gender">
-                        <span>عادي </span>
+                    <div class="d-flex fillters">
+                      <div class="searchBar mt-2 ">
+                        <img src="/assets/images/search-normal.png" />
+                        <input placeholder="بحث" />
                       </div>
-                      <div class="d-flex align-items-center gap-1">
-                        <input type="radio" value="woman" id="flexCheckDisabled" name="gender">
-                        <span>عالي</span>
+                      <div class="d-flex mt-2 gap-2 ToolBtnsContainer mx-2">
+                        <button class="ToolBtn">تحديث
+                          <img src="/assets/images/refresh.png" />
+                        </button>
                       </div>
-                      <div class="d-flex align-items-center gap-1">
-                        <input type="radio" value="both" id="flexCheckDisabled" name="gender">
-                        <span>منخفض</span>
+                      <div class="d-flex mt-2 gap-2 ToolBtnsContainer ">
+                        <button class="ToolBtn" type="button" data-bs-toggle="modal"
+                          data-bs-target="#Contracting-reports-fillter">تصفية
+                          <img src="/assets/images/Filter.png" />
+                        </button>
                       </div>
                     </div>
+                    <ul class=" exportBtnsContiner d-flex mt-2 justify-content-end" style="gap: 20px;">
+                      <li><button class="btn ExportBtn"><img src="/assets/images/printer.svg">
+                        </button>
+                      </li>
+                      <li><button class="btn ExportBtn"><img src="/assets/images/pdf.svg"></button> </li>
+                      <li><button class="btn ExportBtn"><img src="/assets/images/Excel.svg"></button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="TableContainer">
+                    <table id="model-datatables" class="table  nowrap  align-middle" style="width:100%">
+                      <thead>
+                        <tr>
 
+                          <th scope="col" style="text-align: center;">رقم الطلب </th>
+                          <th scope="col"> المريض</th>
+                          <th scope="col"> الرقم الطبي </th>
+                          <th scope="col">التعاقد </th>
+                          <th scope="col">المختبر </th>
+                          <th scope="col">الخدمات </th>
+                          <th scope="col">تاريخ الطلب الفعلي </th>
+                          <th scope="col"> تاريخ الإرسال </th>
+                          <th scope="col"> الحالة </th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class=" rowContent">9658</div>
+                          </td>
+                          <td><a href="#" class="fw-semibold">
+                              <div class="TableProfile">
+                                <img src="/assets/images/TableProfile.png" />
+                                أميرة محمود مصطفى
+                              </div>
+                            </a></td>
+                          <td>
+                            <div class=" rowContent">9658</div>
+                          </td>
+                          <td>
+                            <div class=" rowContent">التأمين</div>
+                          </td>
+                          <td>
+                            <div class=" rowContent">ألفا </div>
+                          </td>
+                          <td>
+                            <div class=" rowContent">CBC</div>
+                          </td>
+                          <td>
+                            <div class=" rowContent">19/8/2024</div>
+                          </td>
+                          <td>
+                            <div class=" rowContent">19/8/2024
+                              -5:30م</div>
+                          </td>
+                          <td>
+                            <div class=" rowContent">الحالة</div>
+                          </td>
+                          <td>
+                            <button class="btn btn-save gray-background"> <img src="/assets/images/printer.png"> طباعة
+                              النتائج</button>
+                          </td>
+                        </tr>
+
+
+                      </tbody>
+                    </table>
+                    <nav class="pagination-nav" class="text-center">
+                      <ul class="pagination">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"> <img
+                              src="/assets/images/PricingContracts/arrow-left.svg"> السابق</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active" aria-current="page">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">التالي <img
+                              src="/assets/images/PricingContracts/arrow-left.svg"></a>
+                        </li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div>
-              <div class="d-flex justify-content-end mt-3">
-                <button style="border-radius: 8px; margin-top: 0px; padding: 5px 16px;" class="btn  add-btn"
-                  type="button">حفظ
-                </button>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                <div class="mainCard mt-3">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4>قائمة الطلبات السابقة </h4>
+                  </div>
+                  <div class="cardToolBar ">
+
+                    <div class="d-flex fillters">
+                      <div class="searchBar mt-2 ">
+                        <img src="/assets/images/search-normal.png" />
+                        <input placeholder="بحث" />
+                      </div>
+                      <div class="d-flex mt-2 gap-2 ToolBtnsContainer mx-2">
+                        <button class="ToolBtn">تحديث
+                          <img src="/assets/images/refresh.png" />
+                        </button>
+                      </div>
+                      <div class="d-flex mt-2 gap-2 ToolBtnsContainer ">
+                        <button class="ToolBtn" type="button" data-bs-toggle="modal"
+                          data-bs-target="#Contracting-reports-fillter">تصفية
+                          <img src="/assets/images/Filter.png" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul class=" exportBtnsContiner d-flex mt-2 justify-content-end" style="gap: 20px;">
+                      <li><button class="btn ExportBtn"><img src="/assets/images/printer.svg">
+                        </button>
+                      </li>
+                      <li><button class="btn ExportBtn"><img src="/assets/images/pdf.svg"></button> </li>
+                      <li><button class="btn ExportBtn"><img src="/assets/images/Excel.svg"></button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="TableContainer">
+                    <table id="model-datatables" class="table  nowrap  align-middle" style="width:100%">
+                      <thead>
+                        <tr>
+
+                          <th scope="col" style="text-align: center;">رقم الطلب </th>
+                          <th scope="col"> المريض</th>
+                          <th scope="col"> الرقم الطبي </th>
+                          <th scope="col">التعاقد </th>
+                          <th scope="col">المختبر </th>
+                          <th scope="col">الخدمات </th>
+                          <th scope="col">تاريخ الطلب الفعلي </th>
+                          <th scope="col"> تاريخ الإرسال </th>
+                          <th scope="col"> الحالة </th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class=" rowContent">9658</div>
+                          </td>
+                          <td><a href="#" class="fw-semibold">
+                              <div class="TableProfile">
+                                <img src="/assets/images/TableProfile.png" />
+                                أميرة محمود مصطفى
+                              </div>
+                            </a></td>
+                          <td>
+                            <div class=" rowContent">9658</div>
+                          </td>
+                          <td>
+                            <div class=" rowContent">التأمين</div>
+                          </td>
+                          <td>
+                            <div class=" rowContent">ألفا </div>
+                          </td>
+                          <td>
+                            <div class=" rowContent">CBC</div>
+                          </td>
+                          <td>
+                            <div class=" rowContent">19/8/2024</div>
+                          </td>
+                          <td>
+                            <div class=" rowContent">19/8/2024
+                              -5:30م</div>
+                          </td>
+                          <td>
+                            <div class=" rowContent">الحالة</div>
+                          </td>
+                          <td>
+                            <button class="btn btn-save gray-background"> <img src="/assets/images/printer.png"> طباعة
+                              النتائج</button>
+                          </td>
+                        </tr>
+
+
+                      </tbody>
+                    </table>
+                    <nav class="pagination-nav" class="text-center">
+                      <ul class="pagination">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"> <img
+                              src="/assets/images/PricingContracts/arrow-left.svg"> السابق</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active" aria-current="page">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">التالي <img
+                              src="/assets/images/PricingContracts/arrow-left.svg"></a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
               </div>
+
             </div>
           </div>
 
@@ -1149,6 +1244,263 @@
   </div>
   <!-- END layout-wrapper -->
 
+  <div class="modal fade" id="NewAddAnalysis" tabindex="-1" aria-labelledby="exampleModalLabell" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> إضافة طلب جديد </h5>
+          <button type="button" class="ModalCloseBtn" data-bs-dismiss="modal" aria-label="Close"> <img
+              src="/assets/images/close-circle.png" /></button>
+        </div>
+        <div class="modal-body">
+
+          <form class="mt-0">
+            <div class="row">
+              <div class="col-6">
+                <div class="InputWithlabel mt-0">
+                  <label>إختر المريض
+                  </label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected disabled> -اختر-</option>
+                    <option value="1">سعودي</option>
+                    <option value="2">سعودي</option>
+                    <option value="3">سعودي</option>
+                  </select>
+
+                </div>
+              </div>
+              <div class="col-6"><label>حدد الخدمات المراد إرسالها</label>
+                <div class="d-flex">
+                  <p class="Analysisname">إسم التحليل</p>
+                  <p class="Analysisname">إسم التحليل</p>
+                  <p class="Analysisname">إسم التحليل</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="InputWithlabel mt-0">
+                  <label>المختبر</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected disabled> -اختر-</option>
+                    <option value="1">سعودي</option>
+                    <option value="2">سعودي</option>
+                    <option value="3">سعودي</option>
+                  </select>
+
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="InputWithlabel mt-0">
+                  <label>الفرع</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected disabled> -اختر-</option>
+                    <option value="1">سعودي</option>
+                    <option value="2">سعودي</option>
+                    <option value="3">سعودي</option>
+                  </select>
+
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="InputWithlabel">
+                  <label>تاريخ الإرسال
+                  </label>
+                  <div class="DateInput d-flex " style="flex: 1;">
+                    <input type="date" class="CustomInputDate" />
+                    <!-- <div class="datepicker-icon" id="date1"></div> -->
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="InputWithlabel">
+                  <label>ملاحظات
+                  </label>
+                  <input type="text">
+
+                </div>
+              </div>
+              <div class="col-12 mt-4 text-end">
+                <div>
+                  <button type="button" class="btn btn-save w-auto ">إضافة طلب جديد</button>
+                </div>
+              </div>
+            </div>
+
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="EditAnalysis" tabindex="-1" aria-labelledby="exampleModalLabell" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> إضافة طلب جديد </h5>
+          <button type="button" class="ModalCloseBtn" data-bs-dismiss="modal" aria-label="Close"> <img
+              src="/assets/images/close-circle.png" /></button>
+        </div>
+        <div class="modal-body">
+          <form class="mt-0">
+            <div class=" mb-3 Clouds">
+              <div class="InputWithlabel mt-0">
+                <div class="d-flex align-items-center ">
+                  <div class="d-flex align-items-center mx-2">
+                    <input type="radio" value="Withdrawn" id="flexCheckDisabled" name="statusCurrent" class="mx-2">
+                    <span> تم السحب </span>
+                  </div>
+                  <div class="d-flex align-items-center mx-2">
+                    <input type="radio" value="representativereceived" id="flexCheckDisabled" name="statusCurrent"
+                      class="mx-2" checked>
+                    <span>تم إستلام المندوب </span>
+                  </div>
+                  <div class="d-flex align-items-center mx-2">
+                    <input type="radio" value="laboratory-received" id="flexCheckDisabled" name="statusCurrent"
+                      class="mx-2">
+                    <span>تم إستلام المختبر </span>
+                  </div>
+                  <div class="d-flex align-items-center mx-2">
+                    <input type="radio" value="result-confirmed" id="flexCheckDisabled" name="statusCurrent"
+                      class="mx-2">
+                    <span>تم تأكيد النتيجة </span>
+                  </div>
+                  <div class="d-flex align-items-center mx-2">
+                    <input type="radio" value="resultReceived" id="flexCheckDisabled" name="statusCurrent" class="mx-2">
+                    <span>تم إستلام النتيجة </span>
+                  </div>
+                  <div class="d-flex align-items-center mx-2">
+                    <input type="radio" value="canceled" id="flexCheckDisabled" name="statusCurrent" class="mx-2">
+                    <span>ملغي</span>
+                  </div>
+                </div>
+              </div>
+              <div class=" choosestatusCurrent show" id="representativereceived">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="InputWithlabel">
+                      <label>إسم المندوب
+                      </label>
+                      <div class="w-100"><input type="text" class="w-100"></div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="InputWithlabel">
+                      <label>رقم الهاتف
+                      </label>
+                      <div class="w-100"><input type="text" class="w-100"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 ">
+                    <div class="InputWithlabel ">
+                      <label>صورة الهوية</label>
+
+                      <div class="mb-3 content-imageTube">
+                        <input type="file" id="imageTube ">
+                        <div class="content d-flex justify-content-center align-items-center">
+                          <img src="/assets/images/document-upload.svg" style="width: 25px;margin-left: 10px;">
+                          <p class="m-0">إرفق الملف</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" choosestatusCurrent " id="resultReceived">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="InputWithlabel mt-4">
+                      <div class="w-100 pt-3"><input type="text" class="w-100" placeholder="CBC"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 ">
+                    <div class="InputWithlabel ">
+                      <label> نتيجة التحليل</label>
+
+                      <div class="mb-3 content-imageTube">
+                        <input type="file" id="imageTube ">
+                        <div class="content d-flex justify-content-center align-items-center">
+                          <img src="/assets/images/document-upload.svg" style="width: 25px;margin-left: 10px;">
+                          <p class="m-0">إرفق الملف</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="InputWithlabel mt-4">
+                      <div class="w-100 pt-3"><input type="text" class="w-100" placeholder="CBC"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 ">
+                    <div class="InputWithlabel ">
+                      <label> نتيجة التحليل</label>
+
+                      <div class="mb-3 content-imageTube">
+                        <input type="file" id="imageTube ">
+                        <div class="content d-flex justify-content-center align-items-center">
+                          <img src="/assets/images/document-upload.svg" style="width: 25px;margin-left: 10px;">
+                          <p class="m-0">إرفق الملف</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="InputWithlabel mt-4">
+                      <div class="w-100 pt-3"><input type="text" class="w-100" placeholder="CBC"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 ">
+                    <div class="InputWithlabel ">
+                      <label> نتيجة التحليل</label>
+
+                      <div class="mb-3 content-imageTube">
+                        <input type="file" id="imageTube ">
+                        <div class="content d-flex justify-content-center align-items-center">
+                          <img src="/assets/images/document-upload.svg" style="width: 25px;margin-left: 10px;">
+                          <p class="m-0">إرفق الملف</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="InputWithlabel mt-4">
+                      <div class="w-100 pt-3"><input type="text" class="w-100" placeholder="CBC"></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 ">
+                    <div class="InputWithlabel ">
+                      <label> نتيجة التحليل</label>
+
+                      <div class="mb-3 content-imageTube">
+                        <input type="file" id="imageTube ">
+                        <div class="content d-flex justify-content-center align-items-center">
+                          <img src="/assets/images/document-upload.svg" style="width: 25px;margin-left: 10px;">
+                          <p class="m-0">إرفق الملف</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mt-4 text-end">
+              <div>
+                <button type="button" class="btn btn-save w-auto ">تغيير الحالة </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="modal fade" id="SampleTypesAdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -1221,105 +1573,15 @@
                 </label>
                 <div class="d-flex gap-3">
                   <div class="d-flex align-items-center gap-1">
-                    <input type="radio" value="" id="flexCheckDisabled" name="gender">
+                    <input class="form-check-input" type="radio" value="" id="flexCheckDisabled" name="gender">
                     <span>عادي </span>
                   </div>
                   <div class="d-flex align-items-center gap-1">
-                    <input type="radio" value="" id="flexCheckDisabled" name="gender">
+                    <input class="form-check-input" type="radio" value="" id="flexCheckDisabled" name="gender">
                     <span>عاجل</span>
                   </div>
                   <div class="d-flex align-items-center gap-1">
-                    <input type="radio" value="" id="flexCheckDisabled" name="gender">
-                    <span>ضروري</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-save w-100">حفظ</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="SampleTypesAddd" tabindex="-1" aria-labelledby="exampleModalLabell" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">تصفية ظهور النتائج </h5>
-          <button type="button" class="ModalCloseBtn" data-bs-dismiss="modal" aria-label="Close"> <img
-              src="/assets/images/close-circle.png" /></button>
-        </div>
-        <div class="modal-body">
-          <form>
-
-            <p style="font-size: 16px ; color: black; margin: 0px;">تصفية حسب التاريخ</p>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="InputWithlabel d-flex gap-2 align-items-center">
-                  <label class="m-0">
-                    من
-                  </label>
-
-                  <div class="DateInput d-flex " style="flex: 1;">
-                    <input type="date" class="CustomInputDate" id="DataPick1" />
-                    <!-- <div class="datepicker-icon" id="date1"></div> -->
-                  </div>
-
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="InputWithlabel d-flex gap-2 align-items-center">
-                  <label class="m-0">
-                    إلى
-                  </label>
-
-                  <div class="DateInput d-flex " style="flex: 1;">
-                    <input type="date" class="CustomInputDate" id="DataPick1" />
-                    <!-- <div class="datepicker-icon" id="date1"></div> -->
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-
-
-
-            <div class="InputWithlabel">
-              <label>
-                إسم الخدمة
-              </label>
-
-              <select class="form-select" aria-label="Default select example">
-                <option selected> التأمين</option>
-                <option value="1">سعودي</option>
-                <option value="2">سعودي</option>
-                <option value="3">سعودي</option>
-              </select>
-
-            </div>
-
-            <div class="row mt-4">
-              <div class="RadioBoxContainer ">
-                <label>
-                  طبيعة الخدمة
-                </label>
-                <div class="d-flex gap-3">
-                  <div class="d-flex align-items-center gap-1">
-                    <input type="radio" value="" id="flexCheckDisabled" name="gender">
-                    <span>عادي </span>
-                  </div>
-                  <div class="d-flex align-items-center gap-1">
-                    <input type="radio" value="" id="flexCheckDisabled" name="gender">
-                    <span>عاجل</span>
-                  </div>
-                  <div class="d-flex align-items-center gap-1">
-                    <input type="radio" value="" id="flexCheckDisabled" name="gender">
+                    <input class="form-check-input" type="radio" value="" id="flexCheckDisabled" name="gender">
                     <span>ضروري</span>
                   </div>
                 </div>
@@ -1350,10 +1612,450 @@
   </div>
 
 
+  <div class="modal fade" id="NewAdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> جمع العينة </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
 
-  <!-- Theme Settings -->
+            <div class="row">
+              <div class="InputWithlabel" style="margin-top:0px">
+                <label>
+                  جمع العينة من الخدمات
+                </label>
+                <div class="buttonsActive">
+                  <button class="btn SingleBtn">CBC</button>
+                  <button class="btn SingleBtn">CBC</button>
+                  <button class="btn SingleBtn">CBC</button>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="InputWithlabel" style="margin-top:0px">
+                  <label>
+                    التاريخ
+                  </label>
+                  <div class="DateInput d-flex " style="flex: 1;">
+                    <input type="date" class="CustomInputDate" id="DataPick1" />
+                    <!-- <div class="datepicker-icon" id="date1"></div> -->
+                  </div>
+
+                </div>
+              </div>
 
 
+              <div class="col-lg-12">
+                <div class="InputWithlabel">
+                  <label>
+                    التمريض المسئول
+                  </label>
+
+                  <div class="d-flex gap-2">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected> -إختر الموظف-</option>
+                      <option value="1">جديد</option>
+                      <option value="2">جديد</option>
+                      <option value="3">جديد</option>
+                    </select>
+                    <div class="ExportBtn">
+                      <img src="/assets/images/add.png" />
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="SelectTags">
+                <div class="Tag"> X ايه عثمان</div>
+                <div class="Tag"> X ايه عثمان</div>
+
+              </div>
+
+
+
+
+            </div>
+            <div style="display: flex;
+            justify-content: flex-end; margin-top: 20px;">
+              <button type="button" class="btn btn-save w-100">تأكيد ونقل لمرحلة العينة</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade " id="AddSocialStatus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">سبب الرجوع لمرحلة الطلب </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="row">
+              <div class="InputWithlabel">
+                <label>
+                  السبب
+                </label>
+
+                <div class="d-flex gap-2">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected> السبب</option>
+                    <option value="1">جديد</option>
+                    <option value="2">جديد</option>
+                    <option value="3">جديد</option>
+                  </select>
+
+                </div>
+
+              </div>
+
+              <div class="col-lg-12">
+                <div class="InputWithlabel mt-0">
+                  <label>ملاحظات </label>
+                  <textarea>
+
+                    </textarea>
+
+                </div>
+              </div>
+
+
+            </div>
+            <div style="display: flex;
+              justify-content: flex-end; margin-top: 20px;">
+              <button type="button" class="btn btn-save w-100">حفظ</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade " id="AddSocialStatus2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">وضع على الجهاز </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="row">
+              <div class="InputWithlabel">
+                <label>
+                  الجهاز
+                </label>
+
+                <div class="d-flex gap-2">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected> إسم الجهاز</option>
+                    <option value="1">جديد</option>
+                    <option value="2">جديد</option>
+                    <option value="3">جديد</option>
+                  </select>
+
+                </div>
+
+              </div>
+
+              <div class="col-lg-12">
+                <div class="InputWithlabel" style="margin-top:0px">
+                  <label>
+                    وقت وتاريخ البداية
+                  </label>
+                  <div class="DateInput d-flex " style="flex: 1;">
+                    <input type="date" class="CustomInputDate" id="DataPick1" />
+                    <!-- <div class="datepicker-icon" id="date1"></div> -->
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div style="display: flex;
+              justify-content: flex-end; margin-top: 20px;">
+              <button type="button" class="btn btn-save w-100">حفظ</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade " id="AddSocialStatus3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">جمع العينة مره أخرى </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="row">
+              <div class="InputWithlabel">
+                <label>
+                  السبب
+                </label>
+
+                <div class="d-flex gap-2">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected> السبب </option>
+                    <option value="1">جديد</option>
+                    <option value="2">جديد</option>
+                    <option value="3">جديد</option>
+                  </select>
+
+                </div>
+
+              </div>
+
+              <div class="col-lg-12">
+                <div class="InputWithlabel mt-0">
+                  <label>ملاحظات </label>
+                  <textarea>
+
+                    </textarea>
+
+                </div>
+              </div>
+
+            </div>
+            <div style="display: flex;
+              justify-content: flex-end; margin-top: 20px;">
+              <button type="button" class="btn btn-save w-100">حفظ</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade " id="AddSocialStatus4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">سبب الرجوع لمرحلة العينة </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="row">
+              <div class="InputWithlabel">
+                <label>
+                  السبب
+                </label>
+
+                <div class="d-flex gap-2">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected> السبب </option>
+                    <option value="1">جديد</option>
+                    <option value="2">جديد</option>
+                    <option value="3">جديد</option>
+                  </select>
+
+                </div>
+
+              </div>
+
+              <div class="col-lg-12">
+                <div class="InputWithlabel mt-0">
+                  <label>ملاحظات </label>
+                  <textarea>
+
+                    </textarea>
+
+                </div>
+              </div>
+
+            </div>
+            <div style="display: flex;
+              justify-content: flex-end; margin-top: 20px;">
+              <button type="button" class="btn btn-save w-100">حفظ</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade " id="AddSocialStatus5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">وضع على الجهاز </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="row">
+              <div class="InputWithlabel">
+                <label>
+                  الجهاز
+                </label>
+
+                <div class="d-flex gap-2">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected> إسم الجهاز</option>
+                    <option value="1">جديد</option>
+                    <option value="2">جديد</option>
+                    <option value="3">جديد</option>
+                  </select>
+
+                </div>
+
+              </div>
+
+              <div class="col-lg-12">
+                <div class="InputWithlabel" style="margin-top:0px">
+                  <label>
+                    وقت وتاريخ البداية
+                  </label>
+                  <div class="DateInput d-flex " style="flex: 1;">
+                    <input type="date" class="CustomInputDate" id="DataPick1" />
+                    <!-- <div class="datepicker-icon" id="date1"></div> -->
+                  </div>
+
+                </div>
+              </div>
+              <div class="InputWithlabel">
+                <label>
+                  الإستشاري
+                </label>
+
+                <div class="d-flex gap-2">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected> محمد الشريف </option>
+                    <option value="1">جديد</option>
+                    <option value="2">جديد</option>
+                    <option value="3">جديد</option>
+                  </select>
+
+                </div>
+
+              </div>
+            </div>
+            <div style="display: flex;
+              justify-content: flex-end; margin-top: 20px;">
+              <button type="button" class="btn btn-save w-100">تأكيد ونقل لمرحلة كتابة النتائج</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade " id="AddSocialStatus6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">سبب الرجوع لمرحلة الجهاز </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="row">
+              <div class="InputWithlabel">
+                <label>
+                  السبب
+                </label>
+
+                <div class="d-flex gap-2">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected> السبب </option>
+                    <option value="1">جديد</option>
+                    <option value="2">جديد</option>
+                    <option value="3">جديد</option>
+                  </select>
+
+                </div>
+
+              </div>
+
+              <div class="col-lg-12">
+                <div class="InputWithlabel mt-0">
+                  <label>ملاحظات </label>
+                  <textarea>
+
+                    </textarea>
+
+                </div>
+              </div>
+
+            </div>
+            <div style="display: flex;
+              justify-content: flex-end; margin-top: 20px;">
+              <button type="button" class="btn btn-save w-100">حفظ</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade " id="AddSocialStatus8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">سبب الرجوع لمرحلة الكتابة </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="row">
+              <div class="InputWithlabel">
+                <label>
+                  السبب
+                </label>
+
+                <div class="d-flex gap-2">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected> السبب </option>
+                    <option value="1">جديد</option>
+                    <option value="2">جديد</option>
+                    <option value="3">جديد</option>
+                  </select>
+
+                </div>
+
+              </div>
+
+              <div class="col-lg-12">
+                <div class="InputWithlabel mt-0">
+                  <label>ملاحظات </label>
+                  <textarea>
+
+                    </textarea>
+
+                </div>
+              </div>
+
+            </div>
+            <div style="display: flex;
+              justify-content: flex-end; margin-top: 20px;">
+              <button type="button" class="btn btn-save w-100">حفظ</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <!-- JAVASCRIPT -->
   <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/libs/simplebar/simplebar.min.js"></script>
@@ -1372,24 +2074,93 @@
   <!-- Dashboard init -->
   <script src="/assets/js/pages/dashboard-analytics.init.js"></script>
 
-  <!-- App js -->
+  <!-- Dashboard init -->
   <script src="/assets/js/jquery.min.js"></script>
   <!-- App js -->
   <script src="/assets/js/app.js"></script>
-
   <script>
     $(document).ready(function () {
-      $('#PricingContracts-nav .collapse ').addClass('show')
-      $('#PricingContracts-nav .collapse .nav .nav-item:nth-child(1) .nav-link').addClass('active')
+      $('#B2B-nav .collapse  ').addClass('show')
+      $('#B2B-nav .collapse .nav .nav-item:nth-child(1) .nav-link').addClass('active')
     });</script>
   <script>
-    const nextBtn = document.getElementById("services-tabb")
-    const nextBtnn = document.getElementById("services-tab")
-    nextBtn.addEventListener("click", () => {
-      nextBtnn.click()
-    })
-  </script>
+    // Get all radio buttons
+    const radio1 = document.getElementById('radio1');
+    const radio2 = document.getElementById('radio2');
+    const radio3 = document.getElementById('radio3');
+    const radio4 = document.getElementById('radio4');
+    const radio5 = document.getElementById('radio5');
 
+    // Get all buttons
+    const btn1 = document.getElementById('btn1');
+    const btn2 = document.getElementById('btn2');
+    const btn3 = document.getElementById('btn3');
+    const btn4 = document.getElementById('btn4');
+    const btn5 = document.getElementById('btn5');
+
+    // Add event listener to each radio button
+    radio1.addEventListener('change', function () {
+      toggleButtons(btn1);
+    });
+    radio2.addEventListener('change', function () {
+      toggleButtons(btn2);
+    });
+    radio3.addEventListener('change', function () {
+      toggleButtons(btn3);
+    });
+    radio4.addEventListener('change', function () {
+      toggleButtons(btn4);
+    });
+    radio5.addEventListener('change', function () {
+      toggleButtons(btn5);
+    });
+
+    // Function to toggle buttons
+    function toggleButtons(activeBtn) {
+      // Add 'hide' class to all buttons
+      [btn1, btn2, btn3, btn4, btn5].forEach(btn => {
+        btn.classList.add('hide');
+      });
+
+      // Remove 'hide' class from active button
+      activeBtn.classList.remove('hide');
+    }
+
+
+    const tags = document.querySelectorAll('.Tag');
+    const buttons = document.querySelectorAll('.SingleBtn');
+
+    buttons.forEach(button => {
+
+      button.addEventListener('click', (e) => {
+        e.preventDefault()
+        buttons.forEach(buttonn => {
+          buttonn.classList.remove('active');
+
+        })
+        button.classList.add('active');
+
+      })
+    })
+
+    tags.forEach(tag => {
+      tag.addEventListener('click', function () {
+        tag.remove();
+      });
+    });
+    $(document).ready(function () {
+      $('input[type=radio][name=statusCurrent]').change(function () {
+        $('.choosestatusCurrent').removeClass('show');
+        if (this.value == 'Withdrawn') {
+          $('#Withdrawn').addClass('show');
+        } else if (this.value == 'representativereceived') {
+          $('#representativereceived').addClass('show')
+        } else if (this.value == 'resultReceived') {
+          $('#resultReceived').addClass('show')
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

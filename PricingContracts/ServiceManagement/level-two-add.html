@@ -952,8 +952,9 @@
                 <button style="border-radius: 8px; margin-top: 0px; padding: 5px 16px;" class="btn  add-btn"
                   type="button">حفظ وإضافة للقائمة
                 </button>
-                <button style="border-radius: 8px; margin-top: 0px;" class="btn  Cancel-btn" type="button">إلغاء
-                </button>
+                <a href="/PricingContracts/ServiceManagement/index.html" style="border-radius: 8px; margin-top: 0px;"
+                  class="btn  Cancel-btn" type="button">إلغاء
+                </a>
               </div>
             </div>
 
@@ -1020,10 +1021,9 @@
                 </div>
               </div>
               <div class="d-flex justify-content-end mt-3">
-                <button class="nav-link next-tab-btn" id="services-tabb" data-bs-toggle="tab"
-                  data-bs-target="#services-tab-pane" type="button" role="tab" aria-controls="services-tab-pane"
-                  aria-selected="false"> التالى
-                  <img src="/assets/images/PricingContracts/arrow-left1.svg"> </button>
+                <a href="/PricingContracts/ServiceManagement/level-three-add.html" class="nav-link next-tab-btn"
+                  id="services-tabb"> التالى
+                  <img src="/assets/images/PricingContracts/arrow-left1.svg"> </a>
               </div>
             </div>
           </div>
@@ -1112,15 +1112,15 @@
                 </label>
                 <div class="d-flex gap-3">
                   <div class="d-flex align-items-center gap-1">
-                    <input class="form-check-input" type="radio" value="" id="flexCheckDisabled" name="gender">
+                    <input type="radio" value="" id="flexCheckDisabled" name="gender">
                     <span>عادي </span>
                   </div>
                   <div class="d-flex align-items-center gap-1">
-                    <input class="form-check-input" type="radio" value="" id="flexCheckDisabled" name="gender">
+                    <input type="radio" value="" id="flexCheckDisabled" name="gender">
                     <span>عاجل</span>
                   </div>
                   <div class="d-flex align-items-center gap-1">
-                    <input class="form-check-input" type="radio" value="" id="flexCheckDisabled" name="gender">
+                    <input type="radio" value="" id="flexCheckDisabled" name="gender">
                     <span>ضروري</span>
                   </div>
                 </div>
@@ -1202,15 +1202,15 @@
                 </label>
                 <div class="d-flex gap-3">
                   <div class="d-flex align-items-center gap-1">
-                    <input class="form-check-input" type="radio" value="" id="flexCheckDisabled" name="gender">
+                    <input type="radio" value="" id="flexCheckDisabled" name="gender">
                     <span>عادي </span>
                   </div>
                   <div class="d-flex align-items-center gap-1">
-                    <input class="form-check-input" type="radio" value="" id="flexCheckDisabled" name="gender">
+                    <input type="radio" value="" id="flexCheckDisabled" name="gender">
                     <span>عاجل</span>
                   </div>
                   <div class="d-flex align-items-center gap-1">
-                    <input class="form-check-input" type="radio" value="" id="flexCheckDisabled" name="gender">
+                    <input type="radio" value="" id="flexCheckDisabled" name="gender">
                     <span>ضروري</span>
                   </div>
                 </div>
@@ -1264,7 +1264,15 @@
   <script src="/assets/js/pages/dashboard-analytics.init.js"></script>
 
   <!-- App js -->
+  <script src="/assets/js/jquery.min.js"></script>
+  <!-- App js -->
   <script src="/assets/js/app.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#PricingContracts-nav .collapse ').addClass('show')
+      $('#PricingContracts-nav .collapse .nav .nav-item:nth-child(1) .nav-link').addClass('active')
+    });</script>
   <script>
     const nextBtn = document.getElementById("services-tabb")
     const nextBtnn = document.getElementById("services-tab")

@@ -1754,16 +1754,16 @@ mybutton &&
     scrollFunction();
   });
 
-  const navbar = document.querySelector('#navbar-nav');
+const navbar = document.querySelector("#navbar-nav");
 
-  navbar.innerHTML=`
+navbar.innerHTML = `
   <ul class="navbar-nav" id="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="/index.html">
+            <li class="nav-item" id="Homepage">
+              <a class="nav-link " href="/index.html">
                 <img src="/assets/images/mainPage.svg" /><span>الصفحة الرئيسية</span>
               </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id='Manage-patient-files'>
               <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="sidebarDashboards">
                 <img src="/assets/images/people.svg" /><span>إدارة ملفات المرضى </span>
@@ -1785,7 +1785,7 @@ mybutton &&
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id='Laboratory-nav'>
               <a class="nav-link menu-link" href="#Laboratory" data-bs-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="Laboratory">
                 <img src="/assets/images/Laboratory.svg" /><span>المختبر</span>
@@ -1797,7 +1797,7 @@ mybutton &&
                       البرامج </a>
                   </li>
                   <li class="nav-item">
-                    <a href="Reports.html" class="nav-link"> التقارير
+                    <a href="/Laboratory/Reports.html" class="nav-link"> التقارير
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1820,7 +1820,7 @@ mybutton &&
                       البرامج </a>
                   </li>
                   <li class="nav-item">
-                    <a href="Reports.html" class="nav-link"> التقارير
+                    <a href="/pathology/Reports.html" class="nav-link"> التقارير
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1868,7 +1868,7 @@ mybutton &&
                       البرامج </a>
                   </li>
                   <li class="nav-item">
-                    <a href="Reports.html" class="nav-link"> التقارير
+                    <a href="/the-stores/Reports.html" class="nav-link"> التقارير
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1880,7 +1880,7 @@ mybutton &&
               </div>
             </li>
            
-            <li class="nav-item">
+            <li class="nav-item" id='Suppliers-nav'>
               <a class="nav-link menu-link" href="#Laboratory5" data-bs-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="Laboratory5">
                 <img src="/assets/images/wallet.png" /><span>الموردين </span>
@@ -1897,7 +1897,7 @@ mybutton &&
               </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item" id='PricingContracts-nav'>
               <a class="nav-link menu-link" href="#PricingContracts" data-bs-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="PricingContracts">
                 <img src="/assets/images/document-normal.png" /><span>التسعير والتعاقدات </span>
@@ -1915,7 +1915,7 @@ mybutton &&
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id='Approvals-nav'>
               <a class="nav-link menu-link" href="#Approvals" data-bs-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="Approvals">
                 <img src="/assets/images/document-normal.png" /><span>الموافقات </span>
@@ -1938,7 +1938,7 @@ mybutton &&
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id='B2B-nav'>
               <a class="nav-link menu-link" href="#B2B" data-bs-toggle="collapse" role="button" aria-expanded="false"
                 aria-controls="B2B">
                 <img src="/assets/images/document-normal.png" /><span>B2B </span>
@@ -1954,7 +1954,7 @@ mybutton &&
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/B2B/programer.html" class="nav-link ">
+                    <a href="/B2B/settings.html" class="nav-link ">
                       الإعدادت
                     </a>
                   </li>
@@ -1973,7 +1973,7 @@ mybutton &&
                       البرامج </a>
                   </li>
                   <li class="nav-item">
-                    <a href="Reports.html" class="nav-link"> التقارير
+                    <a href="/Hr/Reports.html" class="nav-link"> التقارير
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1985,7 +1985,7 @@ mybutton &&
               </div>
             </li>
             
-            <li class="nav-item">
+            <li class="nav-item" id='public-settings-nav'>
               <a class="nav-link" href="/public-settings">
                 <img src="/assets/images/setting-2.png" /><span> إعددات عامة </span>
               </a>
@@ -1995,4 +1995,4 @@ mybutton &&
                 <img src="/assets/images/logout.png" /><span>تسجيل الخروج </span>
               </a>
             </li>
-          </ul>`
+          </ul>`;

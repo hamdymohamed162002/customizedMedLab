@@ -1784,8 +1784,17 @@
   <!-- Dashboard init -->
   <script src="/assets/js/pages/dashboard-analytics.init.js"></script>
 
+
+  <!-- App js -->
+  <script src="/assets/js/jquery.min.js"></script>
   <!-- App js -->
   <script src="/assets/js/app.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#PricingContracts-nav .collapse ').addClass('show')
+      $('#PricingContracts-nav .collapse .nav .nav-item:nth-child(2) .nav-link').addClass('active')
+    });</script>
   <script>var options = {
       chart: {
         type: 'bar'

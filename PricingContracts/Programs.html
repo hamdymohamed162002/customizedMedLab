@@ -1782,6 +1782,8 @@
   <script src="/assets/js/pages/dashboard-analytics.init.js"></script>
 
   <!-- App js -->
+  <script src="/assets/js/jquery.min.js"></script>
+  <!-- App js -->
   <script src="/assets/js/app.js"></script>
   <script>var options = {
       chart: {
@@ -1908,6 +1910,11 @@
 
 
   </script>
+  <script>
+    $(document).ready(function () {
+      $('#PricingContracts-nav .collapse ').addClass('show')
+      $('#PricingContracts-nav .collapse .nav .nav-item:nth-child(1) .nav-link').addClass('active')
+    });</script>
 </body>
 
 </html>

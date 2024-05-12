@@ -1541,7 +1541,15 @@
   <!-- App js -->
   <script src="/assets/js/jquery.min.js"></script>
   <!-- App js -->
+  <script src="/assets/js/jquery.min.js"></script>
+  <!-- App js -->
   <script src="/assets/js/app.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#Approvals-nav .collapse ').addClass('show')
+      $('#Approvals-nav .collapse .nav .nav-item:nth-child(1) .nav-link').addClass('active')
+    });</script>
   <script>  $(document).ready(function () {
       $('input[type="file"]').change(function (e) {
         const geekss = e.target.files[0].name;
