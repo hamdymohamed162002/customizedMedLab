@@ -539,7 +539,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: none;
   border-radius: 8px;
 }
-
+.AddNewWay:hover {
+  color: white;
+  background-color: #086cae;
+}
 .ProgramsTabs .nav-tabs {
   border-bottom: 0px;
 }

@@ -963,6 +963,7 @@ select {
 
 .AddNewWay:hover {
   color: white;
+  background-color: #086cae;
 }
 
 .reports-stores .content-page .nav-tabs .nav-link {
