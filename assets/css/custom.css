@@ -1429,6 +1429,16 @@ table tr td div {
   color: black !important;
 }
 
+.eye-password {
+  width: 20px;
+  height: 20px;
+  vertical-align: sub;
+}
+
+.showPass {
+  display: none;
+}
+
 @media only screen and (max-width: 750px) {
 
   .tab.d-flex,
