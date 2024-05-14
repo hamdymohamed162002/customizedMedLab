@@ -1332,10 +1332,11 @@
                             <div class=" rowContent">1/8/1997</div>
                           </td>
                           <td style="width: auto;">
-                            <div class="rowContent ">
+                            <div class="rowContent">
                               <span class="hiddenPasss">**********</span>
-                              <span class="showPass">**********</span>
-                              <img src="/assets/images/eye-open.svg" class="eye-password">
+                              <span class="showPass">11223344433</span>
+                              <img src="/assets/images/eye-open.svg" id="eye-password" class="eye-password">
+                              <img src="/assets/images/eye-off.svg" id="close-eye-password" class="eye-password">
                             </div>
                           </td>
                           <td style="width: auto;">
@@ -1346,6 +1347,32 @@
                           </td>
                         </tr>
 
+                        <tr>
+
+                          <td style="width: auto;"><a href="#" class="fw-semibold text-center">
+                              #759
+                            </a></td>
+                          <td style="width: auto;">
+                            <div class=" rowContent">#759 896</div>
+                          </td>
+                          <td style="width: auto;">
+                            <div class=" rowContent">1/8/1997</div>
+                          </td>
+                          <td style="width: auto;">
+                            <div class="rowContent">
+                              <span class="hiddenPasss">**********</span>
+                              <span class="showPass">11223344433</span>
+                              <img src="/assets/images/eye-open.svg" id="eye-password" class="eye-password">
+                              <img src="/assets/images/eye-off.svg" id="close-eye-password" class="eye-password">
+                            </div>
+                          </td>
+                          <td style="width: auto;">
+                            <div class=" rowContent"
+                              style="display: flex; align-items: center; justify-content: space-around;">
+                              <img src="/assets/images/delete-red.svg" />
+                            </div>
+                          </td>
+                        </tr>
 
                       </tbody>
                     </table>
@@ -1632,8 +1659,11 @@
   <script>
     $(document).ready(function () {
       $('#B2B-nav .collapse  ').addClass('show')
-      $('#B2B-nav .collapse .nav .nav-item:nth-child(3) .nav-link').addClass('active')
-    });</script>
+      $('#B2B-nav .collapse .nav .nav-item:nth-child(3) .nav-link').addClass('active');
+      $('.eye-password').click(function () {
+        $(this).parent().toggleClass("active");
+      });
+    }); </script>
 
 </body>
 
