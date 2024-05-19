@@ -894,7 +894,7 @@ select {
 }
 
 .AddNewWay:hover {
-  color: white;
+  color: white !important;
 }
 
 .reports-stores .content-page .nav-tabs .nav-link {
@@ -2087,7 +2087,7 @@ select {
 }
 
 .AddNewWay:hover {
-  color: white;
+  color: white !important;
   background-color: #086cae;
 }
 
@@ -2501,4 +2501,18 @@ body[dir="ltr"] div.dataTables_wrapper div.dataTables_paginate ul.pagination a {
   border-radius: 8px;
   padding: 10px 16px;
   cursor: pointer;
+}
+.TabContainer{
+  position: relative;
+}
+.ButtonTab{
+  position: absolute;
+  top: 20px;
+
+}
+body[dir="rtl"] .ButtonTab{
+  left: 20px;
+}
+body[dir="ltr"] .ButtonTab{
+  right: 20px;
 }

@@ -962,7 +962,7 @@ select {
 }
 
 .AddNewWay:hover {
-  color: white;
+  color: white !important;
   background-color: #086cae;
 }
 
@@ -1524,4 +1524,19 @@ table tr td div {
     margin-left: 0px;
     margin-right: auto;
   } */
+}
+
+.TabContainer{
+  position: relative;
+}
+.ButtonTab{
+  position: absolute;
+  top: 20px;
+
+}
+body[dir="rtl"] .ButtonTab{
+  left: 20px;
+}
+body[dir="ltr"] .ButtonTab{
+  right: 20px;
 }
