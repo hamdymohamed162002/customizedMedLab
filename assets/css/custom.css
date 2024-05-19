@@ -937,7 +937,8 @@ select {
 
 
 #Supply-reportFilter .modal-dialog,
-#detailesRequired .modal-dialog {
+#detailesRequired .modal-dialog,
+#GruposProveedoresAdd .modal-dialog {
   max-width: 60%;
 }
 
