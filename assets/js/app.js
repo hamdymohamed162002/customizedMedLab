@@ -1808,7 +1808,7 @@ navbar.innerHTML = `
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id='Path-nav'>
               <a class="nav-link menu-link" href="#Laboratory1" data-bs-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="Laboratory1">
                 <img src="/assets/images/Component 3.png" /><span>الباثولوجي</span>
@@ -1831,7 +1831,7 @@ navbar.innerHTML = `
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="Stores-nav">
               <a class="nav-link menu-link" href="#Laboratory2" data-bs-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="Laboratory2">
                 <img src="/assets/images/folder-open.png" /><span>الخزائن</span>
@@ -1961,7 +1961,7 @@ navbar.innerHTML = `
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="emp-nav">
               <a class="nav-link menu-link" href="#Laboratory7" data-bs-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="Laboratory7">
                 <img src="/assets/images/profile-2user.png" /><span> الموظفين </span>

@@ -1003,7 +1003,7 @@
                                         الرئيسية</span></a></li>
                             <li><a href="#">hr </a></li>
                             <li><a href="/Hr/Programs.html">البرامج</a></li>
-                            <li><a href="/Hr/programs/EmployeeMangemnet.html">طلب سلفة </a></li>
+                            <li><a href="/Hr/programs/EndEmployeeService.html">إيقاف مؤقت عن العمل   </a></li>
 
                         </ul>
                     </div>
@@ -1012,8 +1012,8 @@
                     <div class="mainCard">
                         <h1>قائمة الطلبات </h1>
                         <div class="cardToolBar">
-                            <a href="AddNewRequestAdvance.html" style="border-radius: 8px;" class="btn mt-2 add-btn"
-                                type="button"> طلب جديد
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#SampleTypesAdd2"
+                                style="border-radius: 8px;" class="btn mt-2 add-btn"> طلب جديد
                                 +</a>
 
                             <div class="searchBar mt-2">
@@ -1045,10 +1045,17 @@
 
                                         <th scope="col" style="text-align: center;">إسم الموظف </th>
                                         <th scope="col">الكود </th>
+                                        <th scope="col">رقم الطلب  </th>
+                                        <th scope="col">تاريخ الطلب   </th>
+                                        <th scope="col">تاريخ البداية   </th>
+                                        <th scope="col">تاريخ النهاية   </th>
 
-                                        <th scope="col">رقم الهاتف</th>
-                                        <th scope="col">رقم الهوية </th>
-                                        <th scope="col">حالة الطلب </th>
+
+                                        <th scope="col">القسم  </th>
+
+
+
+                                        <th scope="col">الحالة  </th>
 
 
                                         <th scope="col"></th>
@@ -1066,12 +1073,16 @@
                                         <td>
                                             <div class=" rowContent">#759 896</div>
                                         </td>
-
+                                        <td>
+                                            <div class=" rowContent">#759 896</div>
+                                        </td>
                                         <td>
                                             <div class=" rowContent">0966 556 556 00</div>
                                         </td>
-                                        <td>27</td>
+                                        <td>رئيس تمريض</td>
 
+                                        <td>رئيس تمريض</td>
+                                        <td>رئيس تمريض</td>
 
                                         <td>
                                             <div class=" rowContent"
@@ -1223,7 +1234,218 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="SampleTypesAdd2" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">طلب إيقاف مؤقت عن العمل      </h5>
+                        <button type="button" class="ModalCloseBtn" data-bs-dismiss="modal" aria-label="Close"> <img
+                                src="/assets/images/close-circle.png" /></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="mt-0 mb-2">
+                            <div class="row">
+                                <div class="col-lg-4 mt-2  col-md-6 col-12">
+                                    <div class="InputWithlabel searchEmployee">
+                                        <label>
+                                            إسم الموظف
+                                        </label>
 
+
+                                        <div class="inputcontainer">
+                                            <img src="/assets/images/search-normal.png" />
+                                            <input placeholder="بحث" />
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-8 mt-2 col-md-6 col-12 d-flex align-items-end">
+
+
+                                    <div class="d-flex align-items-center  " style="gap: 24px; width: 100%;">
+                                        <div class="employeeCardInfo">
+                                            <div>
+                                                <div class="TableProfile">
+                                                    <img src="/assets/images/TableProfile.png" />
+                                                    أميرة محمود مصطفى
+                                                </div>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="data">
+                                                <span>
+                                                    الوظيفة
+                                                </span>
+                                                <p>ممرض</p>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="data">
+                                                <span>
+                                                    رقم الموظف
+                                                </span>
+                                                <p>8569</p>
+                                            </div>
+                                        </div>
+                                        <a href=""> <img style="width: 24px;height: 24px;"
+                                                src="/assets/images/close-circleCancel.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-2  col-md-6 col-12">
+                                    <div class="InputWithlabel">
+                                        <label>
+                                            الكود 
+                                        </label>
+
+                                        <input type="text" class="CustomInputDate" id="DataPick1" />
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-2  col-md-6 col-12">
+                                    <div class="InputWithlabel">
+                                        <label>
+                                            رقم القرار
+                                        </label>
+
+                                        <input type="text" class="CustomInputDate" id="DataPick1" />
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-12 col-md-6">
+                                    <div class="InputWithlabel">
+                                        <label>
+                                            القسم
+                                        </label>
+
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected> سبب</option>
+                                            <option value="1">سبب</option>
+                                            <option value="2">سبب</option>
+                                            <option value="3">سبب</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-2 col-12 col-md-6">
+                                    <div class="InputWithlabel">
+                                        <label>
+                                            تاريخ الحركة
+                                        </label>
+
+                                        <div class="DateInput">
+                                            <input type="date" class="CustomInputDate" id="DataPick1" />
+                                            <!-- <div class="datepicker-icon" id="date1"></div> -->
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-2 col-12 col-md-6">
+                                    <div class="InputWithlabel">
+                                        <label>
+                                            تاريخ البداية
+                                        </label>
+
+                                        <div class="DateInput">
+                                            <input type="date" class="CustomInputDate" id="DataPick1" />
+                                            <!-- <div class="datepicker-icon" id="date1"></div> -->
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-2 col-12 col-md-6">
+                                    <div class="InputWithlabel">
+                                        <label>
+                                            تاريخ النهاية
+                                        </label>
+
+                                        <div class="DateInput">
+                                            <input type="date" class="CustomInputDate" id="DataPick1" />
+                                            <!-- <div class="datepicker-icon" id="date1"></div> -->
+                                        </div>
+
+                                    </div>
+                                </div>
+                            
+                                <div class="col-lg-4 col-12 col-md-6">
+                                    <div class="row mt-3">
+                                        <div class="RadioBoxContainer ">
+                                          <label>
+                                            إيقاف المرتب
+                                          </label>
+                                          <div class="d-flex gap-4">
+                                            <div class="d-flex align-items-center gap-1">
+                                              <input class="form-radio-input" type="radio" value="" id="flexCheckDisabled" name="gender">
+                                              <span> نعم</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                              <input class="form-radio-input" type="radio" value="" id="flexCheckDisabled" name="gender">
+                                              <span>لا</span>
+                                            </div>
+                                           
+                                         
+                                          </div>
+                      
+                                        </div>
+
+
+                                        </div>
+                                </div>
+                            <div class="col-lg-4 col-12 col-md-6">
+                                    <div class="row mt-3">
+                                        <div class="RadioBoxContainer ">
+                                          <label>
+                                            منع دخول النظام
+                                          </label>
+                                          <div class="d-flex gap-4">
+                                            <div class="d-flex align-items-center gap-1">
+                                              <input class="form-radio-input" type="radio" value="" id="flexCheckDisabled" name="gender">
+                                              <span> نعم</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                              <input class="form-radio-input" type="radio" value="" id="flexCheckDisabled" name="gender">
+                                              <span>لا</span>
+                                            </div>
+                                           
+                                         
+                                          </div>
+                      
+                                        </div>
+
+                                        
+                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-12 col-md-6 ">
+                                    <div class="InputWithlabel">
+                                        <label>
+                                            ملاحظات
+                                        </label>
+
+                                        <input type="text" />
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex justify-content-end gap-3">
+                            <button type="button" class="btn btn-save ">إرسال الطلب</button>
+                       
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--start back-to-top-->
 
         <!--end back-to-top-->

@@ -1041,7 +1041,7 @@
                 </a>
               </div>
               <div class="col-lg-4 mt-2 col-md-6 col-sm-12">
-                <a href="/Hr/Programs/EmployeeMangemnet.html" class="mainCard ProgramCard d-flex "
+                <a href="/Hr/Programs/TemporeryStop.html" class="mainCard ProgramCard d-flex "
                   style="flex-direction: column; align-items: center;">
                   <div class="ProgramIcon">
                     <img src="/assets/images/minus-cirlce.png" />
@@ -1285,7 +1285,12 @@
 
     <!-- App js -->
     <script src="/assets/js/app.js"></script>
-
+    <script>
+      $(document).ready(function () {
+        $('#emp-nav .collapse').addClass('show')
+        $('#emp-nav .collapse .nav .nav-item:nth-child(1) .nav-link').addClass('active')
+      });
+      </script>
   </body>
 
 </html>

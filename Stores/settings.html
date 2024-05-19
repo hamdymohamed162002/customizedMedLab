@@ -1575,6 +1575,11 @@
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
       }</script>
+        <script>
+          $(document).ready(function () {
+            $('#Stores-nav .collapse  ').addClass('show')
+            $('#Stores-nav .collapse .nav .nav-item:nth-child(1) .nav-link').addClass('active')
+          });</script>
   </body>
 
 </html>

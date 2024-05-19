@@ -539,7 +539,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: none;
   border-radius: 8px;
 }
-
+.AddNewWay:hover {
+  color: white !important;
+  background-color: #086cae;
+}
 .ProgramsTabs .nav-tabs {
   border-bottom: 0px;
 }
@@ -977,4 +980,18 @@ body[dir="ltr"] .main-content {
     margin-left: 0px;
     margin-right: auto;
   } */
+}
+.TabContainer{
+  position: relative;
+}
+.ButtonTab{
+  position: absolute;
+  top: 20px;
+
+}
+body[dir="rtl"] .ButtonTab{
+  left: 20px;
+}
+body[dir="ltr"] .ButtonTab{
+  right: 20px;
 }
