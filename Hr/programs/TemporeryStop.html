@@ -1483,7 +1483,11 @@
 
         <!-- App js -->
         <script src="/assets/js/app.js"></script>
-
+        <script>
+            $(document).ready(function () {
+              $('#emp-nav .collapse  ').addClass('show')
+              $('#emp-nav .collapse .nav .nav-item:nth-child(1) .nav-link').addClass('active')
+            });</script>
     </body>
 
 </html>
