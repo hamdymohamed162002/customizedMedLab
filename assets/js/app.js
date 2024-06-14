@@ -1880,6 +1880,29 @@ navbar.innerHTML = `
               </div>
             </li>
            
+            <li class="nav-item" id='Purchases-nav'>
+              <a class="nav-link menu-link" href="#Purchases" data-bs-toggle="collapse" role="button"
+                aria-expanded="false" aria-controls="Purchases">
+                <img src="/assets/images/box.png" /><span>المشتريات </span>
+              </a>
+              <div class="collapse menu-dropdown " id="Purchases">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="/Purchases/Programs.html" class="nav-link">
+                      البرامج </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/Purchases/Reports.html" class="nav-link"> التقارير
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/Purchases/settings.html" class="nav-link ">
+                      الإعدادت
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li class="nav-item" id='Suppliers-nav'>
               <a class="nav-link menu-link" href="#Laboratory5" data-bs-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="Laboratory5">
