@@ -1961,6 +1961,25 @@ navbar.innerHTML = `
                 </ul>
               </div>
             </li>
+            <li class="nav-item">
+              <a class="nav-link menu-link" href="#Laboratory4" data-bs-toggle="collapse" role="button"
+                aria-expanded="false" aria-controls="Laboratory4">
+                <img src="/assets/images/box.png" /><span>العروض و الخصومات </span>
+              </a>
+              <div class="collapse menu-dropdown " id="Laboratory4">
+                <ul class="nav nav-sm flex-column">
+                  <li class="nav-item">
+                    <a href="/SalesAndOffers/Programs.html" class="nav-link">
+                      البرامج </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/SalesAndOffers/reports/Daily-Reports.html" class="nav-link"> التقارير
+                    </a>
+                  </li>
+                
+                </ul>
+              </div>
+            </li>
             <li class="nav-item" id='B2B-nav'>
               <a class="nav-link menu-link" href="#B2B" data-bs-toggle="collapse" role="button" aria-expanded="false"
                 aria-controls="B2B">
